@@ -8,8 +8,8 @@ const Stack = createNativeStackNavigator<NavigatorParamList>();
 
 const AppNavigator = () => {
   return (
-    <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name="list" component={ListScreen} />
+    <Stack.Navigator >
+      <Stack.Screen options={{headerShown:false}} name="list" component={ListScreen} />
       <Stack.Screen name="detail" component={DetailScreen} />
     </Stack.Navigator>
   );
